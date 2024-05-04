@@ -1,9 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family-fonts-name&family=optional-2nd-font-name&display=swap');
-body{
-   font-family: var(--paragraph-font);
-   max-width: 960px; 
-   padding: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+
 
 :root {
     --primary-color: #235557;
@@ -11,8 +7,8 @@ body{
     --accent1-color: #FFFFFF;
     --accent2-color: #3A3017;
 
-    --heading-font: "font-family", serif;
-    --paragraph-font: "font-family: ", serif;
+    --heading-font: "font-name", serif;
+    --paragraph-font: "optional-2nd-font-name ", sans-serif;
 
     --nav-background-color: #6C6C6C;
     --nav-link-color: #B3FCF9;
@@ -28,7 +24,7 @@ body{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(var(--primary-color));
+    color: var(--primary-color);
 }
 
 header {
