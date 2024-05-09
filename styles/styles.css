@@ -88,12 +88,18 @@ aside{
     text-align:center;
 }
 
+/*
 aside {
     position: relative;
 }
+*/
 
 aside h2 {
     position: absolute;
     top: 430px;
     left: 250px;
+    color: #000000;
+    background-color: #afa8a8;
+    padding: auto;
+    z-index: 1;
 }
