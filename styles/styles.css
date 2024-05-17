@@ -1,105 +1,111 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif
+}
+
+header,footer{
+    max-width: 840px;
+    margin: 0 auto;
+}
 
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 0.6rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 200;
 }
 
 h1 {
-    color: steelblue;
-}
-
-img {
-    width: 200px;
-    height: 200px;
-    border: 2px solid rgb(72, 95, 114);
-    padding: 1px;
-    box-shadow: 0 0 30px rgb(80, 78, 78);
-}
-
-p {
-    padding: 10px;
+    color: slateblue;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-bottom: 1px solid #000;
 }
 
 main {
-    max-width: 840px;
-}
-/*
-aside {
-    width: auto;
-    margin: 2rem;
-    border: 2px solid rgba(0, 0, 0, 1); 
-    padding: 2rem;
-    background-color: darkgrey;
-    color: darkslategray;
-    text-align: center;
-}
-*/
-aside img {
-    width: 150px;
-    height: auto;
+    grid-column: 2;
+    margin: 1rem;
 }
 
 main img {
-    width: 300px;
+    width: 200px;
     height: auto;
+    border: 1px solid rgb(55, 56, 58);
+    padding: 2px;
+    box-shadow: 0 0 20px rgb(56, 56, 65);
     float: right;
+    margin: 0 0 2rem 1rem;
 }
 
-p { 
-  padding: 2px;
+p {
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    position: relative;
+    grid-row: 1;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 130px;
 }
 
 footer {
-    margin-top: 10px;
-    border-top: 2px solid beige;
+    margin-top: 1em;
+    border-top: 1px solid #000;
     text-align: center;
 }
 
 /* Class Selectors */
-
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,.2);
+    border: solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    background-color: #afa8a8;
-    color: #000000;
+    background-color: aliceblue;
+    color: #000;
 }
 
-aside{
-    width: auto;
-    margin: 2rem;
-    border: 2px solid rgba(0, 0, 0, 1); 
-    padding: 2rem;
-    background-color: darkgrey;
-    color: rgb(0, 0, 0);
-    text-align:center;
+header, .grid, footer{
+    max-width: 840px;
+    margin: 0 auto;
+    
 }
 
-/*
-aside {
-    position: relative;
+.grid {
+    display: grid;
+    align-items: center;
 }
-*/
 
-aside h2 {
-    position: absolute;
-    top: 430px;
-    left: 250px;
-    color: #000000;
-    background-color: #afa8a8;
-    padding: auto;
-    z-index: 1;
+indent {
+    padding-left: 1rem;
 }
