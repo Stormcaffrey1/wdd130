@@ -21,36 +21,47 @@ body {
     max-width: 960px;
     padding: 20px;
     margin: 0 auto;
+    color: ver(--text-color)
 }
 
-h1,h2,h3,h5,h6 {
+h1, h2, h3, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color)
 }
 
 header {
+    display: flex;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 20px;
     background-color: var(--accent1-color);
+    text-align: center;
 }
 
-p {
-    padding: 25px;
+.logo-conteiner {
+    flex: 1;
 }
 
-nav{
+.logo{
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
-    display: flex;
 }
+
+
 nav a {
     display: block;
     color: var(--nav-hover-link-color);
     text-decoration: none;
     padding: 1rem;
-}
-
-nav a:link,nav a:visited{
-    color: var(--nav-link-color);
+    font-weight: bold;
 }
 
 nav a:hover{
@@ -62,24 +73,45 @@ nav a:hover{
     position: relative;
     overflow: hidden;
     max-width: 100%;
+    text-align: center;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    left: 200px;
+    text-align: center;
+    color:#FFFFFF;
+    padding: 20px;
+    background-color: rgba(19, 19, 20, 0.521);
+}
+
+.action p {
+    position: absolute;
+    top: 350px;
+    right: 200px;
+    left: 100px;
+    text-align: left;
+    color:#FFFFFF;
+    padding: 20px;
+    background-color: rgba(37, 41, 92, 0.356);
+    
+}
+
+.action img{
+    position: absolute;
+    top: 370px;
+    right: 90px;
+    width: 100px;
+    height: auto;
+
 }
 
 .hero img {
-    display: block;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
-
-.hero h1, .hero article {
-    position: absolute;
-    top:20px;
-    left: 20px;
-    color: white;
-    transform: translate(-50%,-50%);
-    color: white;
-    padding: 20px;
-    background-color: rgba(77, 43, 228, 0.356);
-}
-
 
 .hero article {
     background-color: rgba(67, 107, 218, 0.466);
@@ -92,9 +124,25 @@ nav a:hover{
     margin-left: 20px;
 }
 
+.history, .adventure {
+    padding: 20px 0;
+}
+
+.history .history-content {
+    display: flex;
+    align-items: center;
+}
+
+.history img {
+    margin-left: 20px;
+    max-width: 300px;
+}
+
 .social-media-link {
     text-decoration: none;
     color: var(--primary-color);
+    left: 200px;
+    right: 200px;
 }
 
 .container {
@@ -105,98 +153,14 @@ nav a:hover{
 footer {
     margin-top: 10px;
     border-top: 2rem #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--accent1-color);
 }
 
 footer img{
     width: 50px;
     height: 50px;
+    right: 200px;
+    left: 100px;
 }
-
-/*
-.hero {
-    position: relative;
-}
-
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 59%;
-    transform:  translate(-50%, -50%);
-}
-
-
-/*
-.hero {
-    position: relative;
-}
-
-.hero img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 50%;
-    left: 59%;
-    transform:  translate(-50%, -50%);
-}
-
-.hero article {
-    position: absolute;
-    bottom: auto;
-    left: auto;
-    width: auto;
-    padding: auto;
-    background-color: #6C6C6C;
-}
-
-.hero article img {
-    float: right;
-    margin-left: auto;
-}
-
-.hero article {
-    position: absolute;
-    bottom: auto;
-    left: auto;
-    width: auto;
-    padding: auto;
-    background-color: #6C6C6C;
-}
-
-.hero article img {
-    float: right;
-    margin-left: auto;
-}
-
-article{
-    position: absolute;
-    bottom: auto;
-    left: auto;
-    width: auto;
-    padding: auto;
-    background-color: #6C6C6C;
-}
-
-.article img{
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 80px;
-}
-
-.article h1 {
-    position: absolute;
-    top: 50%;
-    left: 59%;
-    transform:  translate(-50%, -50%);
-}
-*/
