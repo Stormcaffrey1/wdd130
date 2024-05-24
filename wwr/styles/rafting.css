@@ -96,15 +96,19 @@ nav a:hover{
     color:#FFFFFF;
     padding: 20px;
     background-color: rgba(37, 41, 92, 0.356);
+    max-width: 549px;
+    margin: auto;
     
 }
 
 .action img{
     position: absolute;
-    top: 370px;
-    right: 90px;
+    top: 354px;
+    right: 98px;
     width: 100px;
     height: auto;
+    max-width: 450px;
+    margin: auto;
 
 }
 
@@ -138,16 +142,17 @@ nav a:hover{
     max-width: 300px;
 }
 
+.adventure .gallery {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(400px, 2fr));
+    gap: 10px;
+}
+
 .social-media-link {
     text-decoration: none;
     color: var(--primary-color);
     left: 200px;
     right: 200px;
-}
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
 }
 
 footer {
@@ -161,6 +166,4 @@ footer {
 footer img{
     width: 50px;
     height: 50px;
-    right: 200px;
-    left: 100px;
 }
