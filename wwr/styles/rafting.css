@@ -151,8 +151,7 @@ nav a:hover{
 .social-media-link {
     text-decoration: none;
     color: var(--primary-color);
-    left: 200px;
-    right: 200px;
+    align-items: center;
 }
 
 footer {
@@ -204,4 +203,4 @@ footer img{
 
 .contact-form button:hover {
     background-color: var(--secondary-color);
-}
+} 
